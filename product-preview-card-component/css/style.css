@@ -1,0 +1,196 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --Dark-cyan: hsl(158, 36%, 37%);
+    --Cream: hsl(30, 38%, 92%);
+    /* ************* */
+    --Very-dark-blue: hsl(212, 21%, 14%);
+    --Dark-grayish-blue: hsl(228, 12%, 48%);
+    --White: hsl(0, 0%, 100%);
+
+/*textos  */
+    --text2: 'Sonsie One', cursive;
+    --text1: 'Montserrat', sans-serif;
+}
+
+body {
+    min-height: 100vh;
+    font-family: var(--text1);
+    background-color: var(--Cream);
+    font-size: 14px;
+    
+}
+/* HERO */
+.hero {
+    min-height: inherit;
+    padding: 1px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* CARD */
+.container-card {
+    height: 80vh;
+    max-width: 700px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    background-color: var(--White);
+    border-radius: 15px;
+    overflow: hidden;
+}
+
+/* IMG */
+.card-img img{
+    max-width: 100%;
+    display: inherit;
+    object-fit: cover;
+}
+
+/* TEXT */
+.container-text {
+    padding: 30px;
+}
+
+.text {
+    font-size: 20px;
+    letter-spacing: 4px;
+    font-weight: 400;
+    color: var(--Dark-grayish-blue);
+}
+
+.titulo {
+    margin: 10px 0;
+    font-size: 40px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.paragraph {
+    color: var(--Dark-grayish-blue);
+    font-size: 15px;
+    line-height: 25px;
+}
+
+.costo {
+    display: flex;
+    margin-top: 20px ;
+    align-items: center;
+}
+
+.precio {
+    color: var(--Dark-cyan);
+    font-weight: 700;
+    font-size: 25px;
+    font-family: var(--text2);
+}
+
+.descuento {
+    margin: 0 20px;
+    text-decoration: line-through;
+    color: var(--Dark-grayish-blue);
+    font-size: 18px;
+}
+
+.button {
+    width: 100%;
+    margin-top: 15px;
+    border: none;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: var(--Dark-cyan);
+    cursor: pointer;
+    color: var(--White);
+    font-size: 15px;
+    font-weight: 700;
+    transition: background-color .70s ease;
+}
+
+.button:hover {
+    background-color: rgb(29, 104, 29);
+}
+
+@media only screen  and (max-width: 768px) {
+    
+    .container-card {
+        grid-template-columns: 1fr;
+        width: 400px;
+        height: 95vh;
+    }
+
+    .card-img img {
+        width: 100%;
+        height: 230px;
+        object-fit: cover;
+        object-position: centro;
+    }
+
+    .container-text {
+        padding: 5px 25px;
+    }
+
+    .text .paragraph {
+        font-size: 14px;
+    }
+
+    .titulo {
+        font-size: 20px;
+    }
+
+    .costo {
+        margin: 10px 0;
+    }
+
+    .button {
+        margin: 0;
+        padding: 7px 0;
+        border-radius: 5px;
+    }
+}
+
+/* movil 375 */
+@media only screen  and (max-width: 375px) {
+    
+    .container-card {
+        grid-template-columns: 1fr;
+        width: 300px;
+        height: 95vh;
+    }
+
+    .card-img img {
+        width: 100%;
+        height: 230px;
+        object-fit: cover;
+        object-position: centro;
+    }
+
+    .text, .paragraph {
+        font-size: 14px;
+        line-height: normal;
+    }
+
+    .titulo {
+        font-size: px;
+    }
+
+    .costo {
+        margin: 10px 0;
+    }
+
+    .precio {
+        font-size: 18px;
+    }
+
+    .descuento {
+        font-size: 13px;
+    }
+
+    .button {
+        margin: 0;
+        padding: 7px 0;
+        border-radius: 5px;
+    }
+}

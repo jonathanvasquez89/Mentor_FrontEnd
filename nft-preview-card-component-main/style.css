@@ -1,0 +1,147 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    /* ### Primary */
+
+    --Soft-blue: hsl(215, 51%, 70%);    
+    --Cyan: hsl(178, 100%, 50%);
+
+    /* ### Neutral */
+
+    --Very-dark-blue-bg: hsl(217, 54%, 11%);
+    --Very-dark-blue-card: hsl(216, 50%, 16%);
+    --Very-dark-blue-line: hsl(215, 14%, 42%);
+    --White: hsl(0, 0%, 100%);
+
+    /* fonts */
+    --text: 'Outfit', sans-serif;
+}
+
+body {
+    background-color: var(--Very-dark-blue-bg);
+    font-family: var(--text);
+    display: grid;
+    place-content: center;
+}
+
+.container {
+    width: 300px;
+    max-height: 90vh;
+    padding: 20px;
+    margin: 15px 20px;
+    background-color: var(--Very-dark-blue-card);
+    border-radius: 15px;
+}
+
+/* imagenes */
+.imagenes {
+    position: relative;
+}
+
+.imagenes div {
+    position: absolute;
+    top: 0;
+    height: 99%;
+    width: 100%;
+    background-color: rgba(0, 255, 255, 0.459);
+    opacity: 0;
+} 
+
+.imagenes div:hover {
+    opacity: 1;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.imagenes div img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.mainImg {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+}
+
+/* titulo */
+.titulo {
+    padding: 10px 0;
+    color: var(--White);
+    cursor: pointer;
+}
+
+/* descricion */
+.description {
+    color: var(--Soft-blue);
+    font-weight: 300;
+}
+/* ETH-Day */
+.container_eth-day {
+    margin: 10px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.container_eth-day span{
+    padding: 5px;
+}
+
+.eth-day {
+    display: flex;
+    align-items: center;
+}
+
+.eth {
+    color: var(--Cyan);
+}
+.day {
+    color: var(--Soft-blue);
+}
+
+/* linea */
+hr {
+    border-color: var(--Very-dark-blue-line);
+    width: 100%;
+}
+
+/* usuiario */
+.container-usuario {
+    display: flex;
+    align-items: center;
+}
+
+.container-usuario img {
+    width: 30px;
+    margin: 10px 0;
+    border: 1px solid #fff;
+    border-radius: 50%;
+}
+
+.container-usuario h5 {
+    font-weight: 400;
+    padding: 0 10px;
+    color: var(--Soft-blue);
+}
+
+.container-usuario span{
+    color: var(--White);
+}
+
+.titulo:hover, .container-usuario span:hover {
+    color: var(--Cyan);
+    cursor: pointer;
+}
+
+
+
+/* text final */
+.attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }

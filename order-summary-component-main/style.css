@@ -1,0 +1,169 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: 0;
+}
+
+:root {
+    /* ## Colors  Primary */
+
+    --Pale-blue: hsl(225, 100%, 94%);
+    --Bright-blue: hsl(245, 75%, 52%);
+
+    
+    /* ### Neutral */
+
+    --Very-pale-blue: hsl(225, 100%, 98%);
+    --Desaturated-blue: hsl(224, 23%, 55%);
+    --Dark-blue: hsl(223, 47%, 23%);
+
+    /*  Fonts */
+    --text-tamaño: 16px;
+    --family: 'Red Hat Display', sans-serif;
+}
+
+body {
+    font-size: var(--text-tamaño);
+    font-family: var(--family);
+    background-color: var(--Pale-blue);
+    display: grid;
+    place-items: center;
+}
+
+.container {
+    background-color: var(--Very-pale-blue);
+    width: 350px;
+    border-radius: 20px;
+    margin-top: 20px;
+    overflow: hidden;
+}
+
+/* imagen */
+.imagen img{
+    width: 100%;
+}
+
+/* process */
+.container-process {
+    padding: 30px;
+}
+
+/* description */
+.description {
+    width: 100%;
+    text-align: center;
+}
+.description h2 {
+    padding-bottom: 20px;
+    font-weight: 900;
+    color: var(--Dark-blue);
+}
+
+.description p {
+    line-height: 25px;
+    color: var(--Desaturated-blue);
+    padding-bottom: 30px;
+}
+
+.costo-music {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.music {
+    width: 60%;
+    display: flex;
+    align-items: center;
+}
+
+.plan-annual {
+    margin-left: 20px;
+}
+
+.plan-annual h4 {
+    color: var(--Dark-blue);
+    font-weight: 700;
+}
+
+.plan-annual span {
+    color: var(--Desaturated-blue);
+}
+
+.change a {
+    font-weight: 700;
+    font-size: 14px;
+    color: var(--Bright-blue);
+}
+
+.change a:hover {
+    color: rgb(136, 136, 243);
+}
+
+button {
+    width: 100%;
+    padding: 15px 0;
+    border-radius: 10px;
+    border: none;
+    margin-top: 25px;
+    color: #fff;
+    font-weight: 700;
+    background-color: var(--Bright-blue);
+    margin-bottom: 20px;
+}
+
+button:hover {
+    background-color: rgb(136, 136, 243);
+    box-shadow: 0px 10px 20px #00000042;
+}
+
+.cancelar {
+    display: block;
+    margin: 5px auto;
+    width: 100px;
+    text-align: center;
+}
+
+.cancelar a {
+    font-weight: 700;
+    text-decoration: none;
+    color: var(--Desaturated-blue);
+}
+
+.cancelar a:hover {
+    color: var(--Dark-blue);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }

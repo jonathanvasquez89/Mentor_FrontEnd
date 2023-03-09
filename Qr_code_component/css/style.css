@@ -1,0 +1,53 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+body {
+    background-color: rgb(81, 94, 99);
+}
+
+.container {
+    display: block;
+    margin: 35px auto;
+    width: 350px;
+    height: 530px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 10px;
+}
+
+.qr {
+    padding: 20px;
+}
+
+.img_qr {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.titulo {
+    padding: 0 20px;
+    font-size: 15px;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+}
+
+.paragrapf {
+    font-size: 13px;
+    text-align: center;
+    padding: 20px 60px;
+    color: rgb(158, 158, 158);
+    font-family: 'Poppins', sans-serif;
+    font-weight: 900;
+}
+
+.attribution {
+    text-align: center;
+    color: aliceblue;
+}
+.attribution a {
+    color: aqua;
+}
